@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // ① 【デフォルト】現在アクティブに開いているタブの Ruby スクリプトを単体実行
+            "name": "▶ Ruby: Current File",
+            "type": "ruby_lsp",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "runtimeExecutable": "C:/Ruby40-x64/bin/ruby.exe"
+        },
+        {
+            // ② 統合ランナー (main.rb) を実行して全モジュールを一括検証
+            "name": "▶ Ruby: Run main.rb (All Modules)",
+            "type": "ruby_lsp",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.rb",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "C:/Ruby40-x64/bin/ruby.exe"
+        }
+    ]
+}
