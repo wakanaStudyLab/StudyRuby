@@ -87,7 +87,14 @@ ruby src/04_concurrency_and_fibers.rb
 | [`02_blocks_and_enumerable.rb`](file:///C:/Users/harun/programming/Ruby/sample/src/02_blocks_and_enumerable.rb) | **ブロック & パターンマッチング** | `do..end`/`yield`, `Enumerable` (`map/select/sum`), シンボルのProc化 (`&:upcase`), Ruby 3.0+ `case ... in`, `&.` ぼっち演算子 |
 | [`03_oop_and_modules.rb`](file:///C:/Users/harun/programming/Ruby/sample/src/03_oop_and_modules.rb) | **クラス & Mix-in モジュール** | `class`, `attr_reader`, `Module` の `include` (Mix-in), メタプログラミング (`send`, `method_missing`) |
 | [`04_concurrency_and_fibers.rb`](file:///C:/Users/harun/programming/Ruby/sample/src/04_concurrency_and_fibers.rb) | **並行性 & Ractor** | `Fiber` (コルーチン), `Thread` (I/O並行), `Ractor` (Ruby 3.0+ GILフリー並列計算モデル) |
+| [`05_blocks_procs_and_lambdas.rb`](file:///C:/Users/harun/programming/Ruby/sample/src/05_blocks_procs_and_lambdas.rb) | **ブロック・Proc・Lambda** | Proc vs Lambda の引数検査 (Arity) と `return` 挙動の違い, `&:method` 糖衣構文, カリー化 (`curry`) |
 | [`main.rb`](file:///C:/Users/harun/programming/Ruby/sample/main.rb) | **統合エントリーポイント** | 全モジュールを一括実行するランナー |
+
+> 📖 **Ruby ブロック・Proc・Lambda 完全理解ガイド**:  
+> Block と Proc と Lambda の 3 段階構造、`return` の脱出範囲の違い、`words.map(&:upcase)` の `&` 記号の正体（`to_proc`）、カリー化・部分適用まで完全網羅した解説は [**`LAMBDA.md`**](file:///C:/Users/harun/programming/Ruby/sample/LAMBDA.md) を参照してください。
+
+> 🛠️ **Modern Bundler & Gemfile 完全理解ガイド**:  
+> Gemfile の書き方、ペシミスティック演算子 `~>` の意味、環境別グループ (`:development, :test`)、`bundle exec` の必須性、`Gemfile.lock` による再現性保証まで完全網羅した解説は [**`BUNDLER_GUIDE.md`**](file:///C:/Users/harun/programming/Ruby/sample/BUNDLER_GUIDE.md) を参照してください。
 
 ---
 

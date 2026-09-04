@@ -9,6 +9,7 @@ require_relative "src/01_types_and_objects"
 require_relative "src/02_blocks_and_enumerable"
 require_relative "src/03_oop_and_modules"
 require_relative "src/04_concurrency_and_fibers"
+require_relative "src/05_blocks_procs_and_lambdas"
 
 def print_banner(title)
   puts "\n#{'=' * 64}"
@@ -36,6 +37,9 @@ def main
 
   print_section("04: Fibers, Native Threads, and Parallelism (Ractor)")
   Sample::Async.run
+
+  print_section("05: Blocks, Procs, Lambdas, and Symbol#to_proc")
+  Sample::Closures.run
 
   print_banner("ALL RUBY TUTORIAL MODULES COMPLETED SUCCESSFULLY!")
 end
