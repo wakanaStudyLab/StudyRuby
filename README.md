@@ -14,8 +14,6 @@ winget install RubyInstallerTeam.Ruby.3.3
 
 ### 2. サンプルコードの実行
 ```powershell
-cd C:\Users\harun\programming\Ruby\sample
-
 # 全モジュールを一括実行
 ruby main.rb
 
